@@ -1,0 +1,29 @@
+# Python & Build caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+
+# Private Core Algorithm Source Code, Local DMG Artifacts & Admin Platform
+# (.dmg installers are published to GitHub Releases, never committed to main branch tree)
+03_源代码/
+06_商业版云端与OTA套件/
+07_macOS_DMG发布包/
+01_架构与产品规范/
+02_UI与Figma设计系统/
+04_验证与诊断报告/
+05_界面视觉自检_v2.1/
+05_空间地理与主流方向KML/
+参考文献/
+DESIGN.md
+/1_启动SigContour工作台.command
+/launch_sigcontour.command
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.dat
+issued_licenses.json

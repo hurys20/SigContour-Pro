@@ -1,0 +1,10 @@
+Copyright (c) 2026 HydroEcoLab. All rights reserved.
+
+SigContour Pro Proprietary Commercial Software License
+
+1. Grant of License
+   - Trial Edition: Grants a non-exclusive, revocable license to evaluate raw ADCP data loading, coordinate/declination transformation, and basic format conversion (.mat / .csv / .nc).
+   - Pro Edition (1-Year / Lifetime): Upon activation with a valid device-bound cryptographic license key issued by the copyright holder, grants the right to use all quality control, spectral analysis, turbulence parameterization, and publication export modules on the authorized hardware device.
+
+2. Restrictions
+   - Redistribution, decompilation, reverse engineering, disassembly, or modification of the binary application bundle (.app / .dmg) or its compiled native libraries (.so) is strictly prohibited.
