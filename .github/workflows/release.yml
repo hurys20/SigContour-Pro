@@ -29,7 +29,7 @@ jobs:
           ### SigContour Pro v2.1.0 (macOS Apple Silicon 独立安装包)
 
           - **安装包文件**：`SigContour-Pro-v2.1.0-macOS-arm64.dmg`
-          - **SHA-256**：`7b381035b5a5ff5185f28fd2e37ccc2268ebc8fa8d8405f3cbaa7877a7486136`
+          - **SHA-256**：`36070bf3471b84cd4b537ec469cfc6ff16cab0ff52128a096f0a453626e75c70`
           - **安装方式**：点击下方 **Assets** 中的 `SigContour-Pro-v2.1.0-macOS-arm64.dmg` 下载，双击挂载后将 `SigContour Pro.app` 拖入 `Applications` 即可运行。
           EOF
           if gh release view "$TAG" >/dev/null 2>&1; then
