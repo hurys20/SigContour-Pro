@@ -3,7 +3,7 @@
   "platform": "macOS-arm64",
   "latest_version": "2.1.0",
   "release_tag": "v2.1.0",
-  "published_at": "2026-11-07T01:46:17Z",
+  "published_at": "2026-11-07T03:20:42Z",
   "release_title_zh": "SigContour v2.1.0 版本说明",
   "release_highlights": [
     "支持 .ad2cp / .mat 原始数据导入、坐标系统转换 (BEAM/XYZ/ENU) 与 WMM2025 磁偏角校正",
@@ -15,8 +15,8 @@
   "dmg_package": {
     "filename": "SigContour-Pro-v2.1.0-macOS-arm64.dmg",
     "release_tag": "v2.1.0",
-    "sha256": "36070bf3471b84cd4b537ec469cfc6ff16cab0ff52128a096f0a453626e75c70",
-    "size_bytes": 3606809,
+    "sha256": "1f8ec14377e15b90d37ea87e7e2f46b5a295c118d49b4c8b24de7e640fe0968c",
+    "size_bytes": 3675216,
     "native_so_count": 22,
     "download_url": "https://github.com/hurys20/SigContour-Pro/releases/download/v2.1.0/SigContour-Pro-v2.1.0-macOS-arm64.dmg"
   },
