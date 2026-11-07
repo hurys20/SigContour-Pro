@@ -3,21 +3,21 @@
   "platform": "macOS-arm64",
   "latest_version": "2.1.0",
   "release_tag": "v2.1.0",
-  "published_at": "2026-11-07T03:20:42Z",
+  "published_at": "2026-11-07T06:05:00Z",
   "release_title_zh": "SigContour v2.1.0 版本说明",
   "release_highlights": [
     "支持 .ad2cp / .mat 原始数据导入、坐标系统转换 (BEAM/XYZ/ENU) 与 WMM2025 磁偏角校正",
     "支持 3D 相空间去尖峰质控、多尺度功率谱/旋转谱/小波分析、波湍分离与湍流参数化解算",
-    "支持全水层处理成果数据表 (.nc/.csv/.xlsx) 与中英文 Nature 出版级论文配图导出"
+    "支持 M6 四阶段多维数据结构按需勾选导出 (.mat/.csv/.nc) 与独立科研配图设计工作台"
   ],
-  "announcement_banner": "SigContour Pro v2.1.0 (macOS DMG)：支持原始 ADCP 数据转换、全流程流速质控、频谱与湍流参数化解算及中英文论文配图导出。",
+  "announcement_banner": "SigContour Pro v2.1.0 (macOS DMG)：支持原始 ADCP 数据转换、全流程流速质控、四阶段多维数据导出及独立科研配图设计工作台。",
   "download_url": "https://github.com/hurys20/SigContour-Pro/releases/latest",
   "dmg_package": {
     "filename": "SigContour-Pro-v2.1.0-macOS-arm64.dmg",
     "release_tag": "v2.1.0",
-    "sha256": "1f8ec14377e15b90d37ea87e7e2f46b5a295c118d49b4c8b24de7e640fe0968c",
-    "size_bytes": 3675216,
-    "native_so_count": 22,
+    "sha256": "a9b28ca123d19628356f83ad2d7afc22408822e7e2ba4d78191812c926f733d0",
+    "size_bytes": 3870126,
+    "native_so_count": 23,
     "download_url": "https://github.com/hurys20/SigContour-Pro/releases/download/v2.1.0/SigContour-Pro-v2.1.0-macOS-arm64.dmg"
   },
   "files": {}
