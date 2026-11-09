@@ -1,0 +1,41 @@
+name: Publish macOS DMG Release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create or Update GitHub Release with macOS DMG Asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="v2.1.0"
+          DMG_FILE="/tmp/SigContour-Pro-v2.1.0-macOS-arm64.dmg"
+          cat .github/assets/SigContour-Pro-v2.1.0-macOS-arm64.dmg.part* > "$DMG_FILE"
+          TITLE="SigContour Pro ${TAG} (macOS arm64)"
+          cat <<'EOF' > /tmp/release_notes.md
+          ### SigContour Pro v2.1.0 (macOS 独立全内置安装包 · 支持 macOS 12–26)
+
+          - **安装包文件**：`SigContour-Pro-v2.1.0-macOS-arm64.dmg`（已内置 Python 3.12 与全套科学计算/GUI 引擎，无需配置任何外部环境）
+          - **SHA-256**：`1f8c2546d35395d05f32fd5677393821236cbd72237c5d7676ce885d288927c3`
+          - **安装方式**：点击下方 **Assets** 中的 `SigContour-Pro-v2.1.0-macOS-arm64.dmg` 下载，双击挂载后将 `SigContour Pro.app` 拖入 `Applications` 即可运行（若首次打开遇 macOS 浏览器下载安全提示，双击镜像内的 `首次打开若遇系统拦截请双击修复.command` 即可一键放行）。
+          EOF
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$DMG_FILE" --clobber
+            gh release edit "$TAG" --title "$TITLE" --notes-file /tmp/release_notes.md --latest
+          else
+            gh release create "$TAG" "$DMG_FILE" --title "$TITLE" --notes-file /tmp/release_notes.md --latest
+          fi
